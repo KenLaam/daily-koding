@@ -1,8 +1,13 @@
 import UIKit
 
-let array = [1, 20, 33, 14, 85, 46, 37, 18]
+let array = randomNumbers(length: 3000)
+print(array.count)
+print(array)
+let total = randomNumber()
+print(total)
+
 measure {
-//  print(includeSumPair(in: array, total: 21))
-  print(includeSumPairImproved(in: array, total: 21))
+  print(includeSumPair(in: array, total: total))
+//  print(includeSumPairImproved(in: array, total: total))
 }
 
