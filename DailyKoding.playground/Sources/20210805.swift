@@ -4,31 +4,35 @@ import Foundation
 ///
 ///For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 
-// MARK - Easiest way, brute force
-public func includeSumPair(in array: [Int], total: Int) -> Bool {
-  for i in 0..<array.count - 1  {
-    for j in i..<array.count {
-      if array[i] + array[j] == total {
+public class Q1_20210805: NSObject {
+  
+  // MARK: - Easiest way, brute force
+  public static func includeSumPair(in array: [Int], total: Int) -> Bool {
+    for i in 0..<array.count - 1  {
+      for j in i..<array.count {
+        if array[i] + array[j] == total {
+          return true
+        }
+      }
+    }
+    return false
+  }
+
+  // MARK: - Best solution with O(2n)
+  public static func includeSumPairImproved(in array: [Int], total: Int) -> Bool {
+    let sortedArray = array.sorted()
+    var i = 0
+    var pivot = sortedArray.count - 1
+    while i != pivot {
+      let sum = sortedArray[i] + sortedArray[pivot]
+      if sum < total {
+        i += 1
+      } else if sum > total {
+        pivot -= 1
+      } else {
         return true
       }
     }
+    return false
   }
-  return false
-}
-
-public func includeSumPairImproved(in array: [Int], total: Int) -> Bool {
-  let sortedArray = array.sorted()
-  var i = 0
-  var pivot = sortedArray.count - 1
-  while i != pivot {
-    let sum = sortedArray[i] + sortedArray[pivot]
-    if sum < total {
-      i += 1
-    } else if sum > total {
-      pivot -= 1
-    } else {
-      return true
-    }
-  }
-  return false
 }

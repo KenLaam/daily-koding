@@ -1,13 +1,12 @@
 import UIKit
 
-let array = randomNumbers(length: 3000)
-print(array.count)
-print(array)
-let total = randomNumber()
-print(total)
+let array = randomNumbers(length: 23)
 
-measure {
-  print(includeSumPair(in: array, total: total))
-//  print(includeSumPairImproved(in: array, total: total))
+runningBlock(Q2_20210806.className) {
+  print(Q2_20210806.simpleSolution(array: array))
 }
 
+
+runningBlock(Q2_20210806.className) {
+  print(Q2_20210806.advancedSolution(array: array))
+}
