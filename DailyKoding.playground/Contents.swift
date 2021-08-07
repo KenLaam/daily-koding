@@ -1,12 +1,15 @@
 import UIKit
 
-let array = randomNumbers(length: 23)
+let node = Q3_20210807.Node(value: "root",
+                            left: Q3_20210807.Node(value: "left", left: Q3_20210807.Node(value: "left.left")),
+                            right: Q3_20210807.Node(value: "right"))
 
-runningBlock(Q2_20210806.className) {
-  print(Q2_20210806.simpleSolution(array: array))
-}
+let serializedString = Q3_20210807.serialize(root: node)
+print(serializedString)
 
-
-runningBlock(Q2_20210806.className) {
-  print(Q2_20210806.advancedSolution(array: array))
+if let deserializedNode = Q3_20210807.deserialize(string: serializedString) {
+  print(deserializedNode.left?.left?.value)
+  print(deserializedNode.right?.value)
+  print(deserializedNode.right?.left?.value)
+  print(Q3_20210807.serialize(root: deserializedNode))
 }
