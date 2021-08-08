@@ -1,15 +1,7 @@
 import UIKit
+let max = 100_000
+let array = randomNumbers(length: max, in: 1...max)
 
-let node = Q3_20210807.Node(value: "root",
-                            left: Q3_20210807.Node(value: "left", left: Q3_20210807.Node(value: "left.left")),
-                            right: Q3_20210807.Node(value: "right"))
-
-let serializedString = Q3_20210807.serialize(root: node)
-print(serializedString)
-
-if let deserializedNode = Q3_20210807.deserialize(string: serializedString) {
-  print(deserializedNode.left?.left?.value)
-  print(deserializedNode.right?.value)
-  print(deserializedNode.right?.left?.value)
-  print(Q3_20210807.serialize(root: deserializedNode))
+runningBlock("firstMissingPositive Extreme mode") {
+  print(Q4_20210808.firstMissingPositive(array))
 }
