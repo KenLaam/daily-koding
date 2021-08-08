@@ -37,6 +37,8 @@ public class Q4_20210808: NSObject {
   }
   
   public static func firstMissingPositive(_ nums: [Int]) -> Int {
+    /// Create flag array with initial value = 0, size = N + 1, worst case is linear array
+    /// If elemen is greater than 0 and smaller than N + 1, update element at index element - 1 due to array start from 0 not 1
     var flags = Array(repeating: 0, count: nums.count + 1)
     for num in nums {
       if num > 0, num < flags.count {
@@ -44,6 +46,7 @@ public class Q4_20210808: NSObject {
       }
     }
     
+    /// Traverse flag array to get answer, stop condition is flag = 0 => missing array, else increase 0 if not equal 0
     var result = 1
     for flag in flags {
       if flag == 0 {
