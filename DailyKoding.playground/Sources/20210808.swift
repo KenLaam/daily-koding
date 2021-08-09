@@ -8,32 +8,17 @@ import Foundation
 
 public class Q4_20210808: NSObject {
   public static func firstMissingPositiveNaiveMode(_ array: [Int]) -> Int {
-    var tempArr = [Int]()
-    for element in array {
-      if element > 0 {
-        tempArr.append(element)
+    let tempArr = array.sorted()
+    var result = 0
+    for num in tempArr {
+      if num > 0 {
+        if num - result > 1 {
+          return result + 1
+        }
+        result = num
       }
     }
-    tempArr.sort()
-    var result = 1
-    var index = 0
-    while true {      
-      let diff = tempArr[index] - result
-      if index == tempArr.count - 1 {
-        if diff == 0 {
-          result += 1
-        }
-        break
-      } else {
-        if diff == 0 {
-          result += 1
-          index += 1
-        } else {
-          break
-        }
-      }
-    }
-    return result
+    return result + 1
   }
   
   public static func firstMissingPositive(_ nums: [Int]) -> Int {
