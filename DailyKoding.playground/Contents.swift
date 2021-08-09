@@ -1,11 +1,6 @@
 import UIKit
-let max = 1000
-let array = randomNumbers(length: max, in: 1...max)
 
-runningBlock("firstMissingPositive Extreme mode") {
-  print(Q4_20210808.firstMissingPositive(array))
-}
+let pair = Q5_20210809.cons(a: 3, b: 4)
 
-runningBlock("firstMissingPositive Naive mode") {
-  print(Q4_20210808.firstMissingPositiveNaiveMode(array))
-}
+Q5_20210809.car(pair)
+Q5_20210809.cdr(pair)
