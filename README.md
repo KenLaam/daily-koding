@@ -10,6 +10,7 @@ Welcome your pull request to update the best solutions.
   - [Problem 3](#problem-3)
   - [Problem 4](#problem-4)
   - [Problem 5](#problem-5)
+  - [Problem 6](#problem-6)
 
 ## Problem 1
 > This problem was recently asked by Google.
@@ -81,3 +82,13 @@ Implement `car` and `cdr`.
 
 `This problem is not also problem in Swift when there is tuples.`
 ### [Solution](DailyKoding.playground/Sources/Q5_20210809.swift)
+
+## Problem 6
+> This problem was asked by Google.
+
+An XOR linked list is a more memory efficient doubly linked list. Instead of each node holding `next` and `prev` fields, it holds a field named `both`, which is an `XOR` of the next node and the previous node. Implement an XOR linked list; it has an `add(element)` which adds the element to the end, and a `get(index)` which returns the node at index.
+
+If using a language that has no pointers (such as Python), you can assume you have access to `get_pointer` and `dereference_pointer` functions that converts between nodes and memory addresses.
+
+### [Solution](DailyKoding.playground/Sources/Q6_20210810.swift)
+
