@@ -1,17 +1,9 @@
 import Foundation
 
-var list = Q6_20210810.XorList()
+Q7_20210811.countDecodeMessages("12")
 
-list.add(0)
-list.add(1)
-list.add(2)
-list.add(3)
-list.add(4)
-list.add(5)
-list.add(6)
+Q7_20210811.countDecodeMessages("226")
 
+Q7_20210811.countDecodeMessages("12567281931871653214")
 
-list.get(2)?.value
-list.get(3)?.value
-list.get(6)?.value
-list.get(0)?.value
+Q7_20210811.countDecodeMessages("111111111222222211112")
