@@ -12,6 +12,7 @@ Welcome your pull request to update the best solutions.
   - [Problem 5](#problem-5)
   - [Problem 6](#problem-6)
   - [Problem 7](#problem-7)
+  - [Problem 8](#problem-8)
 
 ## Problem 1
 > This problem was recently asked by Google.
@@ -103,4 +104,25 @@ For example, the message `'111'` would give `3`, since it could be decoded as `'
 You can assume that the messages are decodable. For example, `'001'` is not allowed.
 
 ### [Solution](DailyKoding.playground/Sources/Q7_20210811.swift)
+
+## Problem 8
+> This problem was asked by Google.
+
+A unival tree (which stands for "universal value") is a tree where all nodes under it have the same value.
+
+Given the root to a binary tree, count the number of unival subtrees.
+
+For example, the following tree has 5 unival subtrees:
+```
+   0
+  / \
+ 1   0
+    / \
+   1   0
+  / \
+ 1   1
+
+```
+
+### [Solution](DailyKoding.playground/Sources/Q8_20210812.swift)
 
