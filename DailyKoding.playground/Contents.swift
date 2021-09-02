@@ -1,4 +1,7 @@
 import Foundation
 
-let array = [4,1,1,4,1,2]
-Q9_20210902.findMaxSumNonAdjacentNumber(array)
+let array = [2,3,1,0,8,9,3]
+
+print(Q9_20210902.findMaxSumNonAdjacentNumber(array))
+
+Q10_20210902.delayJob(ms: 1000)
