@@ -15,6 +15,7 @@ Welcome your pull request to update the best solutions.
   - [Problem 8](#problem-8)
   - [Problem 9](#problem-9)
   - [Problem 10](#problem-10)
+  - [Problem 11](#problem-11)
 
 ## Problem 1
 > This problem was recently asked by Google.
@@ -144,3 +145,14 @@ Thanks [Tushar Roy - Coding Made Simple](https://www.youtube.com/watch?v=UtGtF6n
 Implement a job scheduler which takes in a function `f` and an integer `n`, and calls `f` after `n` milliseconds.
 
 ### [Solution](DailyKoding.playground/Sources/Q10_20210902.swift)
+
+## Problem 11
+> This problem was asked by Twitter.
+
+Implement an autocomplete system. That is, given a query string `s` and a set of all possible query strings, return all strings in the set that have `s` as a prefix.
+
+For example, given the query string `de` and the set of strings `[dog, deer, deal]`, return `[deer, deal]`.
+
+Hint: Try preprocessing the dictionary into a more efficient data structure to speed up queries.
+
+### [Solution](DailyKoding.playground/Sources/Q11_20210904.swift)

@@ -1,7 +1,7 @@
 import Foundation
 
-let array = [2,3,1,0,8,9,3]
+let array = ["dog", "deer", "deal", "fish", "cat", "chihuahua"]
 
-print(Q9_20210902.findMaxSumNonAdjacentNumber(array))
-
-Q10_20210902.delayJob(ms: 1000)
+Q11_20210904.findStringIn(array, query: "q")
+Q11_20210904.findStringIn(array, query: "de")
+Q11_20210904.findStringIn(array, query: "c")
