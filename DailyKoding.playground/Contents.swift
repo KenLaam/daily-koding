@@ -1,7 +1,12 @@
 import Foundation
 
-let array = ["dog", "deer", "deal", "fish", "cat", "chihuahua"]
+let height = 23
+let steps = [1, 3, 5]
 
-Q11_20210904.findStringIn(array, query: "q")
-Q11_20210904.findStringIn(array, query: "de")
-Q11_20210904.findStringIn(array, query: "c")
+runningBlock("Fibo") {
+  Q12_20210904.findSteps_fibo(height: height, steps: steps)
+}
+
+runningBlock("Dynamic") {
+  Q12_20210904.findWays_dynamic(height: height, steps: steps)
+}
