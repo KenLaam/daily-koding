@@ -17,6 +17,8 @@ Welcome your pull request to update the best solutions.
   - [Problem 10](#problem-10)
   - [Problem 11](#problem-11)
   - [Problem 12](#problem-12)
+  - [Problem 13](#problem-13)
+  - [Problem 14](#problem-14)
 
 ## Problem 1
 > This problem was recently asked by Google.
@@ -184,3 +186,13 @@ Given an integer `k` and a string `s`, find the length of the longest substring 
 For example, given `s = "abcba"` and `k = 2`, the longest substring with `k` distinct characters is `"bcb"`.
 
 ### [Solution](DailyKoding.playground/Sources/Q13_20210905.swift)
+
+## Problem 14
+> This problem was asked by Google.
+
+The area of a circle is defined as `πr^2`. Estimate `π` to 3 decimal places using a Monte Carlo method.
+
+Hint: The basic equation of a circle is `x^2 + y^2 = r^2`.
+
+### [Solution](DailyKoding.playground/Sources/Q14_20210906.swift)
+[Fully explained about Monte Carlo method from GeeksForGeeks](https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/)
