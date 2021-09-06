@@ -196,3 +196,11 @@ Hint: The basic equation of a circle is `x^2 + y^2 = r^2`.
 
 ### [Solution](DailyKoding.playground/Sources/Q14_20210906.swift)
 [Fully explained about Monte Carlo method from GeeksForGeeks](https://www.geeksforgeeks.org/estimating-value-pi-using-monte-carlo/)
+
+## Problem 15
+> This problem was asked by Facebook.
+
+Given a stream of elements too large to store in memory, pick a random element from the stream with uniform probability.
+
+### [Solution](DailyKoding.playground/Sources/Q15_20210906.swift)
+[Fully solution from GeeksForGeeks](https://www.geeksforgeeks.org/select-a-random-number-from-stream-with-o1-space/)
