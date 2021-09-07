@@ -19,6 +19,8 @@ Welcome your pull request to update the best solutions.
   - [Problem 12](#problem-12)
   - [Problem 13](#problem-13)
   - [Problem 14](#problem-14)
+  - [Problem 15](#problem-15)
+  - [Problem 16](#problem-16)
 
 ## Problem 1
 > This problem was recently asked by Google.
@@ -204,3 +206,15 @@ Given a stream of elements too large to store in memory, pick a random element f
 
 ### [Solution](DailyKoding.playground/Sources/Q15_20210906.swift)
 [Fully solution from GeeksForGeeks](https://www.geeksforgeeks.org/select-a-random-number-from-stream-with-o1-space/)
+
+## Problem 16
+> This problem was asked by Twitter.
+
+You run an e-commerce website and want to record the last N order ids in a log. Implement a data structure to accomplish this, with the following API:
+```
+    - record(order_id): adds the order_id to the log
+    - get_last(i): gets the ith last element from the log. i is guaranteed to be smaller than or equal to N.
+```
+You should be as efficient with time and space as possible.
+
+### [Solution](DailyKoding.playground/Sources/Q16_20210907.swift)
